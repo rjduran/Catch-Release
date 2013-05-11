@@ -1,0 +1,3 @@
+INCLUDE filename='TyrellN6_blue.txt'
+
+PROPERTY control='Pane 2088' name='graphics' id='0' value='TYRELLN6_v2_gelb'

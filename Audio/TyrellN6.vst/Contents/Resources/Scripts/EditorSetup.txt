@@ -1,0 +1,1239 @@
+COLOUR name='EditorPanelBG' rgba='707070ff'
+
+COLOUR name='EditorPanelBD' rgba='2a2a2aff'
+
+COLOUR name='White Rider' rgba='f0f0f0ff'
+
+COL_ELEMENT name='White Rider.2' parent='White Rider' rgba='c9c2c5ff' location='0.600000'
+
+COL_ELEMENT name='White Rider.3' parent='White Rider' rgba='ffffffff' location='1.000000'
+
+COLOUR name='Horizontal Ruler' rgba='01010100' location='0.450980'
+
+COL_ELEMENT name='Horizontal Ruler.2' parent='Horizontal Ruler' rgba='99' location='0.462745'
+
+COL_ELEMENT name='Horizontal Ruler.3' parent='Horizontal Ruler' rgba='ffffff9d' location='0.505882'
+
+COL_ELEMENT name='Horizontal Ruler.4' parent='Horizontal Ruler' rgba='ffffff00' location='0.615686'
+
+
+GRAPHIC name='EditorPanelBGRect' path='1' type='captioned rect'
+GR_PROPERTY graphic='EditorPanelBGRect' name='width' id='0' value='256.00'
+GR_PROPERTY graphic='EditorPanelBGRect' name='height' id='0' value='256.00'
+GR_PROPERTY graphic='EditorPanelBGRect' name='scalable' id='0' value='yes'
+GR_PROPERTY graphic='EditorPanelBGRect' name='colour' id='0' value='grey'
+GR_PROPERTY graphic='EditorPanelBGRect' name='colour' id='1' value='White Rider'
+GR_PROPERTY graphic='EditorPanelBGRect' name='colour' id='2' value='white'
+GR_PROPERTY graphic='EditorPanelBGRect' name='colour' id='3' value='black'
+GR_PROPERTY graphic='EditorPanelBGRect' name='border' id='0' value='0.04'
+GR_PROPERTY graphic='EditorPanelBGRect' name='radius' id='0' value='0.11'
+GR_PROPERTY graphic='EditorPanelBGRect' name='caption' id='0' value='23.00'
+
+
+/********************************************************
+*                                                       *
+*					 Controls                           *
+*                                                       *
+********************************************************/
+
+CONTROL type='Pane' name='*i*GradientLab' bounds='42.00 29.00 273.00 215.00' parent='editRootControl' layerMask='1'
+PROPERTY control='*i*GradientLab' name='colours' id='0' value='grey'
+PROPERTY control='*i*GradientLab' name='colours' id='1' value='White Rider'
+PROPERTY control='*i*GradientLab' name='colours' id='2' value='none'
+PROPERTY control='*i*GradientLab' name='colours' id='3' value='none'
+PROPERTY control='*i*GradientLab' name='graphics' id='0' value='EditorPanelBGRect'
+PROPERTY control='*i*GradientLab' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*GradientLab' name='movable' id='0' value='YES'
+
+CONTROL type='ColourView' name='*i*MasterColour' bounds='17.00 27.00 100.00 100.00' parent='*i*GradientLab' layerMask='1'
+PROPERTY control='*i*MasterColour' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*MasterColour' name='graphics' id='0' value='none'
+PROPERTY control='*i*MasterColour' name='MainEditor' id='0' value='YES'
+
+CONTROL type='Label' name='ColorInspCaption' bounds='8.00 -25.00 221.00 22.00' parent='*i*MasterColour' layerMask='ffffffff'
+PROPERTY control='ColorInspCaption' name='colours' id='0' value='none'
+PROPERTY control='ColorInspCaption' name='colours' id='1' value='black'
+PROPERTY control='ColorInspCaption' name='graphics' id='0' value='none'
+PROPERTY control='ColorInspCaption' name='labeltext' id='0' value='*i*MasterColour'
+PROPERTY control='ColorInspCaption' name='labelTextSize' id='0' value='14.00'
+PROPERTY control='ColorInspCaption' name='parentLabel' id='0' value='yes'
+
+CONTROL type='EditMenus' name='*i*ColSlider_1_1' bounds='130.00 31.00 110.00 14.00' parent='*i*GradientLab' layerMask='1'
+PROPERTY control='*i*ColSlider_1_1' name='colours' id='0' value='none'
+PROPERTY control='*i*ColSlider_1_1' name='colours' id='1' value='black'
+PROPERTY control='*i*ColSlider_1_1' name='colours' id='2' value='defaultText'
+
+/********************************************************
+*                                                       *
+*					 COMP LAYERS                        *
+*                                                       *
+********************************************************/
+
+CONTROL type='Pane' name='*i*CompLayerMan' bounds='15.00 18.00 201.00 242.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='*i*CompLayerMan' name='colours' id='0' value='grey'
+PROPERTY control='*i*CompLayerMan' name='colours' id='1' value='White Rider'
+PROPERTY control='*i*CompLayerMan' name='colours' id='2' value='none'
+PROPERTY control='*i*CompLayerMan' name='colours' id='3' value='none'
+PROPERTY control='*i*CompLayerMan' name='graphics' id='0' value='EditorPanelBGRect'
+PROPERTY control='*i*CompLayerMan' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*CompLayerMan' name='movable' id='0' value='YES'
+
+CONTROL type='Rack' name='*i*Comp_LayerRack' bounds='15.00 30.00 172.00 200.00' parent='*i*CompLayerMan' layerMask='1'
+PROPERTY control='*i*Comp_LayerRack' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Comp_LayerRack' name='colours' id='1' value='black'
+PROPERTY control='*i*Comp_LayerRack' name='colours' id='2' value='none'
+PROPERTY control='*i*Comp_LayerRack' name='colours' id='3' value='none'
+PROPERTY control='*i*Comp_LayerRack' name='graphics' id='0' value='none'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='0' value='RackUnit 1'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='1' value='RackUnit 2'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='2' value='RackUnit 3'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='3' value='RackUnit 4'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='4' value='RackUnit 5'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='5' value='RackUnit 6'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='6' value='RackUnit 7'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='7' value='RackUnit 8'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='8' value='RackUnit 9'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='9' value='RackUnit 10'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='10' value='RackUnit 11'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='11' value='RackUnit 12'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='12' value='RackUnit 13'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='13' value='RackUnit 14'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='14' value='RackUnit 15'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='15' value='RackUnit 16'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='16' value='RackUnit 17'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='17' value='RackUnit 18'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='18' value='RackUnit 19'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='19' value='RackUnit 20'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='20' value='RackUnit 21'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='21' value='RackUnit 22'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='22' value='RackUnit 23'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='23' value='RackUnit 24'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='24' value='RackUnit 25'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='25' value='RackUnit 26'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='26' value='RackUnit 27'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='27' value='RackUnit 28'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='28' value='RackUnit 29'
+PROPERTY control='*i*Comp_LayerRack' name='layer' id='29' value='RackUnit 30'
+PROPERTY control='*i*Comp_LayerRack' name='allowSwapping' id='0' value='NO'
+
+CONTROL type='Pane' name='*i*CompLayer_Pane1' bounds='6.00 0.00 144.00 23.00' parent='*i*Comp_LayerRack' layerMask='1'
+PROPERTY control='*i*CompLayer_Pane1' name='colours' id='0' value='White Rider'
+PROPERTY control='*i*CompLayer_Pane1' name='colours' id='1' value='black'
+PROPERTY control='*i*CompLayer_Pane1' name='colours' id='2' value='none'
+PROPERTY control='*i*CompLayer_Pane1' name='colours' id='3' value='none'
+PROPERTY control='*i*CompLayer_Pane1' name='graphics' id='0' value='none'
+PROPERTY control='*i*CompLayer_Pane1' name='layer' id='0' value='Layer 1'
+//PROPERTY control='*i*CompLayer_Pane1' name='RackMember' id='0' value='YES'
+
+CONTROL type='EditMenus' name='*i*Comp_LayerSelector1' bounds='23.00 2.00 120.00 19.00' parent='*i*CompLayer_Pane1' layerMask='1'
+PROPERTY control='*i*Comp_LayerSelector1' name='colours' id='0' value='none'
+PROPERTY control='*i*Comp_LayerSelector1' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*Comp_LayerSelector1' name='colours' id='2' value='black'
+
+CONTROL type='EditMenus' name='*i*CompLayer_Eye1' bounds='2.00 2.00 20.00 19.00' parent='*i*CompLayer_Pane1' layerMask='1'
+PROPERTY control='*i*CompLayer_Eye1' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayer_Eye1' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*CompLayer_Eye1' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*Comp_LayerLabel' bounds='10.00 1.00 182.00 22.00' parent='*i*CompLayerMan' layerMask='1'
+PROPERTY control='*i*Comp_LayerLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*Comp_LayerLabel' name='colours' id='1' value='black'
+PROPERTY control='*i*Comp_LayerLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*Comp_LayerLabel' name='labeltext' id='0' value='Composite Layers'
+PROPERTY control='*i*Comp_LayerLabel' name='labelTextSize' id='0' value='14.00'
+
+
+/********************************************************
+*                                                       *
+*					 COMPOSITE FX  						*
+*                                                       *
+********************************************************/
+
+CONTROL type='Pane' name='*i*CompLayerPane' bounds='81.00 48.00 183.00 559.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='*i*CompLayerPane' name='colours' id='0' value='grey'
+PROPERTY control='*i*CompLayerPane' name='colours' id='1' value='White Rider'
+PROPERTY control='*i*CompLayerPane' name='colours' id='2' value='none'
+PROPERTY control='*i*CompLayerPane' name='colours' id='3' value='none'
+PROPERTY control='*i*CompLayerPane' name='graphics' id='0' value='EditorPanelBGRect'
+PROPERTY control='*i*CompLayerPane' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*CompLayerPane' name='movable' id='0' value='YES'
+
+CONTROL type='EditMenus' name='*i*CompLayerName' bounds='11.00 32.00 160.00 20.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompLayerName' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayerName' name='colours' id='1' value='none'
+PROPERTY control='*i*CompLayerName' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompLayerBlend' bounds='38.00 56.00 64.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompLayerBlend' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayerBlend' name='colours' id='1' value='none'
+PROPERTY control='*i*CompLayerBlend' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompLayerAlpha' bounds='141.00 56.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompLayerAlpha' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayerAlpha' name='colours' id='1' value='none'
+PROPERTY control='*i*CompLayerAlpha' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*CompFX1_Label' bounds='8.00 156.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1_Label' name='colours' id='0' value='none'
+PROPERTY control='*i*CompFX1_Label' name='colours' id='1' value='white'
+PROPERTY control='*i*CompFX1_Label' name='graphics' id='0' value='none'
+PROPERTY control='*i*CompFX1_Label' name='labeltext' id='0' value='FX1'
+PROPERTY control='*i*CompFX1_Label' name='labelTextSize' id='0' value='11.00'
+
+CONTROL type='EditMenus' name='*i*CompFX1' bounds='38.00 156.00 133.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompFX1' name='colours' id='1' value='none'
+PROPERTY control='*i*CompFX1' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompFX1_P2' bounds='141.00 196.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1_P2' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompFX1_P2' name='colours' id='1' value='none'
+PROPERTY control='*i*CompFX1_P2' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompFX1_P3' bounds='141.00 216.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1_P3' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompFX1_P3' name='colours' id='1' value='none'
+PROPERTY control='*i*CompFX1_P3' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompFX1_P1' bounds='141.00 176.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1_P1' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompFX1_P1' name='colours' id='1' value='none'
+PROPERTY control='*i*CompFX1_P1' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompFX1_P4' bounds='141.00 236.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompFX1_P4' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompFX1_P4' name='colours' id='1' value='none'
+PROPERTY control='*i*CompFX1_P4' name='colours' id='2' value='white'
+
+CONTROL type='EditMenus' name='*i*CompLayerMask' bounds='38.00 76.00 64.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompLayerMask' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayerMask' name='colours' id='1' value='none'
+PROPERTY control='*i*CompLayerMask' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='Label Alpha' bounds='109.00 58.00 32.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label Alpha' name='colours' id='0' value='none'
+PROPERTY control='Label Alpha' name='colours' id='1' value='white'
+PROPERTY control='Label Alpha' name='graphics' id='0' value='none'
+PROPERTY control='Label Alpha' name='labeltext' id='0' value='Alpha'
+
+CONTROL type='Label' name='Label Blend' bounds='8.00 58.00 32.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label Blend' name='colours' id='0' value='none'
+PROPERTY control='Label Blend' name='colours' id='1' value='white'
+PROPERTY control='Label Blend' name='graphics' id='0' value='none'
+PROPERTY control='Label Blend' name='labeltext' id='0' value='Blend'
+
+CONTROL type='Label' name='Label Mask' bounds='7.00 78.00 32.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label Mask' name='colours' id='0' value='none'
+PROPERTY control='Label Mask' name='colours' id='1' value='white'
+PROPERTY control='Label Mask' name='graphics' id='0' value='none'
+PROPERTY control='Label Mask' name='labeltext' id='0' value='Mask'
+
+CONTROL type='Label' name='*i*Comp Label CompFX' bounds='24.00 1.00 138.00 21.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*Comp Label CompFX' name='colours' id='0' value='none'
+PROPERTY control='*i*Comp Label CompFX' name='colours' id='1' value='black'
+PROPERTY control='*i*Comp Label CompFX' name='graphics' id='0' value='none'
+PROPERTY control='*i*Comp Label CompFX' name='labeltext' id='0' value='Composite FX'
+PROPERTY control='*i*Comp Label CompFX' name='labelTextSize' id='0' value='15.00'
+
+CONTROL type='EditMenus' name='*i*CompRayDepth' bounds='141.00 107.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompRayDepth' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompRayDepth' name='colours' id='1' value='none'
+PROPERTY control='*i*CompRayDepth' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='Label Mode' bounds='7.00 111.00 32.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label Mode' name='colours' id='0' value='none'
+PROPERTY control='Label Mode' name='colours' id='1' value='white'
+PROPERTY control='Label Mode' name='graphics' id='0' value='none'
+PROPERTY control='Label Mode' name='labeltext' id='0' value='Shade'
+
+CONTROL type='EditMenus' name='*i*CompLayerShade' bounds='38.00 108.00 64.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompLayerShade' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompLayerShade' name='colours' id='1' value='none'
+PROPERTY control='*i*CompLayerShade' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='Label Rays' bounds='115.00 109.00 24.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label Rays' name='colours' id='0' value='none'
+PROPERTY control='Label Rays' name='colours' id='1' value='white'
+PROPERTY control='Label Rays' name='graphics' id='0' value='none'
+PROPERTY control='Label Rays' name='labeltext' id='0' value='Rays'
+
+CONTROL type='EditMenus' name='*i*CompOversample' bounds='141.00 127.00 30.00 16.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*CompOversample' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CompOversample' name='colours' id='1' value='none'
+PROPERTY control='*i*CompOversample' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='Label OSamp' bounds='105.00 129.00 34.00 12.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='Label OSamp' name='colours' id='0' value='none'
+PROPERTY control='Label OSamp' name='colours' id='1' value='white'
+PROPERTY control='Label OSamp' name='graphics' id='0' value='none'
+PROPERTY control='Label OSamp' name='labeltext' id='0' value='OSamp'
+
+CONTROL type='Label' name='*Label_FX1_1' bounds='37.00 177.00 100.00 14.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*Label_FX1_1' name='colours' id='0' value='none'
+PROPERTY control='*Label_FX1_1' name='colours' id='1' value='black'
+PROPERTY control='*Label_FX1_1' name='graphics' id='0' value='none'
+PROPERTY control='*Label_FX1_1' name='labeltext' id='0' value='Depth'
+PROPERTY control='*Label_FX1_1' name='labelTextAlignment' id='0' value='2'
+
+CONTROL type='Label' name='*Label_FX1_2' bounds='37.00 197.00 100.00 14.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*Label_FX1_2' name='colours' id='0' value='none'
+PROPERTY control='*Label_FX1_2' name='colours' id='1' value='black'
+PROPERTY control='*Label_FX1_2' name='graphics' id='0' value='none'
+PROPERTY control='*Label_FX1_2' name='labeltext' id='0' value='Label 4983'
+PROPERTY control='*Label_FX1_2' name='labelTextAlignment' id='0' value='2'
+
+CONTROL type='Label' name='*Label_FX1_3' bounds='37.00 217.00 100.00 14.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*Label_FX1_3' name='colours' id='0' value='none'
+PROPERTY control='*Label_FX1_3' name='colours' id='1' value='black'
+PROPERTY control='*Label_FX1_3' name='graphics' id='0' value='none'
+PROPERTY control='*Label_FX1_3' name='labeltext' id='0' value='Label 4984'
+PROPERTY control='*Label_FX1_3' name='labelTextAlignment' id='0' value='2'
+
+CONTROL type='Label' name='*Label_FX1_4' bounds='37.00 237.00 100.00 14.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*Label_FX1_4' name='colours' id='0' value='none'
+PROPERTY control='*Label_FX1_4' name='colours' id='1' value='black'
+PROPERTY control='*Label_FX1_4' name='graphics' id='0' value='none'
+PROPERTY control='*Label_FX1_4' name='labeltext' id='0' value='Label 4985'
+PROPERTY control='*Label_FX1_4' name='labelTextAlignment' id='0' value='2'
+
+CONTROL type='Label' name='*i*Comp HR1' bounds='11.00 94.00 160.00 10.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*Comp HR1' name='colours' id='0' value='Horizontal Ruler'
+PROPERTY control='*i*Comp HR1' name='colours' id='1' value='invisible'
+PROPERTY control='*i*Comp HR1' name='graphics' id='0' value='none'
+PROPERTY control='*i*Comp HR1' name='labeltext' id='0' value='Label 4986'
+
+CONTROL type='Label' name='*i*Comp HR 2' bounds='11.00 144.00 160.00 10.00' parent='*i*CompLayerPane' layerMask='1'
+PROPERTY control='*i*Comp HR 2' name='colours' id='0' value='Horizontal Ruler'
+PROPERTY control='*i*Comp HR 2' name='colours' id='1' value='invisible'
+PROPERTY control='*i*Comp HR 2' name='graphics' id='0' value='none'
+PROPERTY control='*i*Comp HR 2' name='labeltext' id='0' value='Label 4987'
+
+/********************************************************
+*                                                       *
+*					 COLOURS                           *
+*                                                       *
+********************************************************/
+
+CONTROL type='Pane' name='*i*Colours' bounds='800.00 0.00 151.00 465.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='*i*Colours' name='colours' id='0' value='grey'
+PROPERTY control='*i*Colours' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*Colours' name='movable' id='0' value='YES'
+
+CONTROL type='Label' name='*i*Col_La1' bounds='7.00 8.00 136.00 15.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La1' name='colours' id='0' value='none'
+PROPERTY control='*i*Col_La1' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La1' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La1' name='labeltext' id='0' value='COLOURS'
+
+
+
+CONTROL type='ColourView' name='*i*Col_Co1' bounds='7.00 26.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co1' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co1' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La36' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co1' layerMask='ffffffff'
+PROPERTY control='*i*Col_La36' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La36' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La36' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La36' name='labeltext' id='0' value='no colour'
+PROPERTY control='*i*Col_La36' name='parentLabel' id='0' value='yes'
+
+
+
+CONTROL type='ColourView' name='*i*Col_Co2' bounds='7.00 62.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co2' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co2' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La35' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co2' layerMask='ffffffff'
+PROPERTY control='*i*Col_La35' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La35' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La35' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La35' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co3' bounds='7.00 98.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co3' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co3' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La34' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co3' layerMask='ffffffff'
+PROPERTY control='*i*Col_La34' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La34' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La34' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La34' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co4' bounds='7.00 134.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co4' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co4' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La33' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co4' layerMask='ffffffff'
+PROPERTY control='*i*Col_La33' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La33' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La33' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La33' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co5' bounds='7.00 170.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co5' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co5' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La32' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co5' layerMask='ffffffff'
+PROPERTY control='*i*Col_La32' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La32' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La32' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La32' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co6' bounds='7.00 206.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co6' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co6' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La31' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co6' layerMask='ffffffff'
+PROPERTY control='*i*Col_La31' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La31' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La31' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La31' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co7' bounds='7.00 242.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co7' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co7' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La30' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co7' layerMask='ffffffff'
+PROPERTY control='*i*Col_La30' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La30' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La30' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La30' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co8' bounds='7.00 278.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co8' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co8' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La29' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co8' layerMask='ffffffff'
+PROPERTY control='*i*Col_La29' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La29' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La29' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La29' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co9' bounds='7.00 314.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co9' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co9' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La28' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co9' layerMask='ffffffff'
+PROPERTY control='*i*Col_La28' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La28' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La28' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La28' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co10' bounds='7.00 350.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co10' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co10' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La27' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co10' layerMask='ffffffff'
+PROPERTY control='*i*Col_La27' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La27' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La27' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La27' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co11' bounds='7.00 386.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co11' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co11' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La26' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co11' layerMask='ffffffff'
+PROPERTY control='*i*Col_La26' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La26' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La26' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La26' name='labeltext' id='0' value='no colour'
+
+CONTROL type='ColourView' name='*i*Col_Co12' bounds='7.00 422.00 32.00 32.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_Co12' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*Col_Co12' name='graphics' id='0' value='none'
+
+CONTROL type='Label' name='*i*Col_La25' bounds='35.00 16.00 100.00 16.00' parent='*i*Col_Co12' layerMask='ffffffff'
+PROPERTY control='*i*Col_La25' name='colours' id='0' value='trans black'
+PROPERTY control='*i*Col_La25' name='colours' id='1' value='white'
+PROPERTY control='*i*Col_La25' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La25' name='labeltext' id='0' value='no colour'
+
+CONTROL type='Label' name='*i*Col_La13' bounds='42.00 26.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La13' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La13' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La13' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La13' name='labeltext' id='0' value='Label 4510'
+
+CONTROL type='Label' name='*i*Col_La14' bounds='42.00 62.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La14' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La14' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La14' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La14' name='labeltext' id='0' value='Label 4514'
+
+CONTROL type='Label' name='*i*Col_La15' bounds='42.00 98.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La15' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La15' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La15' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La15' name='labeltext' id='0' value='Label 4517'
+
+CONTROL type='Label' name='*i*Col_La16' bounds='42.00 134.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La16' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La16' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La16' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La16' name='labeltext' id='0' value='Label 4520'
+
+CONTROL type='Label' name='*i*Col_La17' bounds='42.00 170.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La17' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La17' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La17' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La17' name='labeltext' id='0' value='Label 4523'
+
+CONTROL type='Label' name='*i*Col_La18' bounds='42.00 206.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La18' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La18' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La18' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La18' name='labeltext' id='0' value='Label 4526'
+
+CONTROL type='Label' name='*i*Col_La19' bounds='42.00 242.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La19' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La19' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La19' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La19' name='labeltext' id='0' value='Label 4529'
+
+CONTROL type='Label' name='*i*Col_La20' bounds='42.00 278.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La20' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La20' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La20' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La20' name='labeltext' id='0' value='Label 4532'
+
+CONTROL type='Label' name='*i*Col_La21' bounds='42.00 314.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La21' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La21' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La21' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La21' name='labeltext' id='0' value='Label 4535'
+
+CONTROL type='Label' name='*i*Col_La22' bounds='42.00 350.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La22' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La22' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La22' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La22' name='labeltext' id='0' value='Label 4538'
+
+CONTROL type='Label' name='*i*Col_La23' bounds='42.00 386.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La23' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La23' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La23' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La23' name='labeltext' id='0' value='Label 4541'
+
+CONTROL type='Label' name='*i*Col_La24' bounds='42.00 422.00 100.00 16.00' parent='*i*Colours' layerMask='1'
+PROPERTY control='*i*Col_La24' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Col_La24' name='colours' id='1' value='black'
+PROPERTY control='*i*Col_La24' name='graphics' id='0' value='none'
+PROPERTY control='*i*Col_La24' name='labeltext' id='0' value='Label 4544'
+
+/********************************************************
+*                                                       *
+*					 INSPECTOR                           *
+*                                                       *
+********************************************************/
+
+
+
+CONTROL type='Pane' name='*i*Inspector' bounds='1000.00 0.00 264.00 400.00' inset='1.00 1.00 1.00 1.00' parent='Inspector' layerMask='1'
+PROPERTY control='*i*Inspector' name='colours' id='0' value='grey'
+PROPERTY control='*i*Inspector' name='colours' id='1' value='White Rider'
+PROPERTY control='*i*Inspector' name='colours' id='2' value='none'
+PROPERTY control='*i*Inspector' name='graphics' id='0' value='EditorPanelBGRect'
+PROPERTY control='*i*Inspector' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*Inspector' name='movable' id='0' value='YES'
+
+CONTROL type='Label' name='*i*Insp_Label' bounds='10.00 1.00 244.00 22.00' parent='*i*Inspector' layerMask='1'
+PROPERTY control='*i*Insp_Label' name='colours' id='0' value='none'
+PROPERTY control='*i*Insp_Label' name='colours' id='1' value='black'
+PROPERTY control='*i*Insp_Label' name='graphics' id='0' value='none'
+PROPERTY control='*i*Insp_Label' name='labeltext' id='0' value='Inspector'
+PROPERTY control='*i*Insp_Label' name='labelTextSize' id='0' value='14.00'
+
+CONTROL type='Rack' name='*i*inspectorRack' bounds='6.00 25.00 250.00 360.00' inset='1.00 1.00 1.00 1.00' parent='*i*Inspector' layerMask='1'
+PROPERTY control='*i*inspectorRack' name='colours' id='0' value='none'
+PROPERTY control='*i*inspectorRack' name='colours' id='1' value='none'
+PROPERTY control='*i*inspectorRack' name='colours' id='2' value='none'
+PROPERTY control='*i*inspectorRack' name='colours' id='3' value='none'
+PROPERTY control='*i*inspectorRack' name='graphics' id='0' value='none'
+PROPERTY control='*i*inspectorRack' name='layer' id='0' value='Colours'
+PROPERTY control='*i*inspectorRack' name='layer' id='1' value='Graphics'
+PROPERTY control='*i*inspectorRack' name='layer' id='2' value='Params'
+PROPERTY control='*i*inspectorRack' name='layer' id='3' value='Grid'
+PROPERTY control='*i*inspectorRack' name='layer' id='4' value='Control'
+
+CONTROL type='Pane' name='*i*ColoursRider' bounds='6.00 0.00 240.00 80.00' inset='1.00 1.00 1.00 1.00' parent='*i*inspectorRack' layerMask='1'
+PROPERTY control='*i*ColoursRider' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*ColoursRider' name='colours' id='1' value='none'
+PROPERTY control='*i*ColoursRider' name='colours' id='2' value='none'
+PROPERTY control='*i*ColoursRider' name='graphics' id='0' value='none'
+PROPERTY control='*i*ColoursRider' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*ColoursRider' name='RackMember' id='0' value='YES'
+
+CONTROL type='CollPane' name='*i*CtrlColours' bounds='0.00 20.00 240.00 60.00' inset='1.00 1.00 1.00 1.00' parent='*i*ColoursRider' layerMask='1'
+PROPERTY control='*i*CtrlColours' name='colours' id='0' value='none'
+PROPERTY control='*i*CtrlColours' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CtrlColours' name='colours' id='2' value='none'
+PROPERTY control='*i*CtrlColours' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlColours' name='layer' id='0' value='+'
+PROPERTY control='*i*CtrlColours' name='layer' id='1' value='-'
+
+CONTROL type='EditMenus' name='*i*CtrlColour0' bounds='120.00 2.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlColours' layerMask='1'
+PROPERTY control='*i*CtrlColour0' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CtrlColour0' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*CtrlColour0' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*ColLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlColour0' layerMask='ffffffff'
+PROPERTY control='*ColLabel' name='colours' id='0' value='none'
+PROPERTY control='*ColLabel' name='colours' id='1' value='white'
+PROPERTY control='*ColLabel' name='graphics' id='0' value='none'
+PROPERTY control='*ColLabel' name='labeltext' id='0' value='Background'
+PROPERTY control='*ColLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*ColLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='LayerSelector' name='*i*ColInflate' bounds='220.00 2.00 21.00 19.00' inset='1.00 1.00 1.00 1.00' parent='*i*ColoursRider' layerMask='1'
+PROPERTY control='*i*ColInflate' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*ColInflate' name='colours' id='1' value='trans white'
+PROPERTY control='*i*ColInflate' name='colours' id='2' value='trans white'
+PROPERTY control='*i*ColInflate' name='colours' id='3' value='none'
+PROPERTY control='*i*ColInflate' name='colours' id='4' value='none'
+PROPERTY control='*i*ColInflate' name='graphics' id='0' value='none'
+PROPERTY control='*i*ColInflate' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='*i*Colheader' bounds='0.00 3.00 221.00 17.00' inset='1.00 1.00 1.00 1.00' parent='*i*ColoursRider' layerMask='1'
+PROPERTY control='*i*Colheader' name='colours' id='0' value='trans white'
+PROPERTY control='*i*Colheader' name='colours' id='1' value='black'
+PROPERTY control='*i*Colheader' name='graphics' id='0' value='none'
+PROPERTY control='*i*Colheader' name='labeltext' id='0' value=' Colours'
+PROPERTY control='*i*Colheader' name='labelTextAlignment' id='0' value='0'
+
+
+
+CONTROL type='Pane' name='*i*GraphicsRider' bounds='6.00 80.00 240.00 60.00' inset='1.00 1.00 1.00 1.00' parent='*i*inspectorRack' layerMask='2'
+PROPERTY control='*i*GraphicsRider' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*GraphicsRider' name='colours' id='1' value='none'
+PROPERTY control='*i*GraphicsRider' name='colours' id='2' value='none'
+PROPERTY control='*i*GraphicsRider' name='graphics' id='0' value='none'
+PROPERTY control='*i*GraphicsRider' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*GraphicsRider' name='RackMember' id='0' value='YES'
+
+CONTROL type='CollPane' name='*i*CtrlGraphics' bounds='0.00 20.00 240.00 20.00' inset='1.00 1.00 1.00 1.00' parent='*i*GraphicsRider' layerMask='1'
+PROPERTY control='*i*CtrlGraphics' name='colours' id='0' value='none'
+PROPERTY control='*i*CtrlGraphics' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CtrlGraphics' name='colours' id='2' value='none'
+PROPERTY control='*i*CtrlGraphics' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlGraphics' name='layer' id='0' value='+'
+PROPERTY control='*i*CtrlGraphics' name='layer' id='1' value='-'
+
+CONTROL type='EditMenus' name='*i*CtrlGraphic0' bounds='120.00 2.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlGraphics' layerMask='1'
+PROPERTY control='*i*CtrlGraphic0' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CtrlGraphic0' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*CtrlGraphic0' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*GraphLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlGraphic0' layerMask='ffffffff'
+PROPERTY control='*i*GraphLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*GraphLabel' name='colours' id='1' value='white'
+PROPERTY control='*i*GraphLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*GraphLabel' name='labeltext' id='0' value='PaneBackground'
+PROPERTY control='*i*GraphLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*i*GraphLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='LayerSelector' name='*i*GraphInfl' bounds='220.00 2.00 21.00 19.00' inset='1.00 1.00 1.00 1.00' parent='*i*GraphicsRider' layerMask='1'
+PROPERTY control='*i*GraphInfl' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*GraphInfl' name='colours' id='1' value='trans white'
+PROPERTY control='*i*GraphInfl' name='colours' id='2' value='trans white'
+PROPERTY control='*i*GraphInfl' name='colours' id='3' value='none'
+PROPERTY control='*i*GraphInfl' name='colours' id='4' value='none'
+PROPERTY control='*i*GraphInfl' name='graphics' id='0' value='none'
+PROPERTY control='*i*GraphInfl' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='*i*GraphicsHeader' bounds='0.00 3.00 221.00 17.00' inset='1.00 1.00 1.00 1.00' parent='*i*GraphicsRider' layerMask='1'
+PROPERTY control='*i*GraphicsHeader' name='colours' id='0' value='trans white'
+PROPERTY control='*i*GraphicsHeader' name='colours' id='1' value='black'
+PROPERTY control='*i*GraphicsHeader' name='graphics' id='0' value='none'
+PROPERTY control='*i*GraphicsHeader' name='labeltext' id='0' value=' Graphics'
+PROPERTY control='*i*GraphicsHeader' name='labelTextAlignment' id='0' value='0'
+
+
+
+
+
+CONTROL type='Pane' name='*i*ParamsRider' bounds='6.00 120.00 240.00 112.00' inset='1.00 1.00 1.00 1.00' parent='*i*inspectorRack' layerMask='3'
+PROPERTY control='*i*ParamsRider' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*ParamsRider' name='colours' id='1' value='none'
+PROPERTY control='*i*ParamsRider' name='colours' id='2' value='none'
+PROPERTY control='*i*ParamsRider' name='graphics' id='0' value='none'
+PROPERTY control='*i*ParamsRider' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*ParamsRider' name='RackMember' id='0' value='YES'
+
+CONTROL type='CollPane' name='*i*CtrlParams' bounds='0.00 20.00 240.00 20.00' inset='1.00 1.00 1.00 1.00' parent='*i*ParamsRider' layerMask='1'
+PROPERTY control='*i*CtrlParams' name='colours' id='0' value='none'
+PROPERTY control='*i*CtrlParams' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CtrlParams' name='colours' id='2' value='none'
+PROPERTY control='*i*CtrlParams' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlParams' name='layer' id='0' value='+'
+PROPERTY control='*i*CtrlParams' name='layer' id='1' value='-'
+
+CONTROL type='EditMenus' name='*i*CtrlParam0' bounds='120.00 2.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlParams' layerMask='1'
+PROPERTY control='*i*CtrlParam0' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CtrlParam0' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*CtrlParam0' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*ParamLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlParam0' layerMask='ffffffff'
+PROPERTY control='*i*ParamLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*ParamLabel' name='colours' id='1' value='white'
+PROPERTY control='*i*ParamLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*ParamLabel' name='labeltext' id='0' value='PaneBackground'
+PROPERTY control='*i*ParamLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*i*ParamLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='LayerSelector' name='*i*ParamInfl' bounds='220.00 2.00 21.00 19.00' inset='1.00 1.00 1.00 1.00' parent='*i*ParamsRider' layerMask='1'
+PROPERTY control='*i*ParamInfl' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*ParamInfl' name='colours' id='1' value='trans white'
+PROPERTY control='*i*ParamInfl' name='colours' id='2' value='trans white'
+PROPERTY control='*i*ParamInfl' name='colours' id='3' value='none'
+PROPERTY control='*i*ParamInfl' name='colours' id='4' value='none'
+PROPERTY control='*i*ParamInfl' name='graphics' id='0' value='none'
+PROPERTY control='*i*ParamInfl' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='*i*ParamsHeader' bounds='0.00 3.00 221.00 17.00' inset='1.00 1.00 1.00 1.00' parent='*i*ParamsRider' layerMask='1'
+PROPERTY control='*i*ParamsHeader' name='colours' id='0' value='trans white'
+PROPERTY control='*i*ParamsHeader' name='colours' id='1' value='black'
+PROPERTY control='*i*ParamsHeader' name='graphics' id='0' value='none'
+PROPERTY control='*i*ParamsHeader' name='labeltext' id='0' value=' Parameters'
+PROPERTY control='*i*ParamsHeader' name='labelTextAlignment' id='0' value='0'
+
+
+
+
+
+CONTROL type='Pane' name='*i*GridRider' bounds='6.00 172.00 240.00 60.00' inset='1.00 1.00 1.00 1.00' parent='*i*inspectorRack' layerMask='4'
+PROPERTY control='*i*GridRider' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*GridRider' name='colours' id='1' value='none'
+PROPERTY control='*i*GridRider' name='colours' id='2' value='none'
+PROPERTY control='*i*GridRider' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridRider' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*GridRider' name='RackMember' id='0' value='YES'
+
+CONTROL type='CollPane' name='*i*GridParams' bounds='0.00 20.00 240.00 40.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridRider' layerMask='1'
+PROPERTY control='*i*GridParams' name='colours' id='0' value='none'
+PROPERTY control='*i*GridParams' name='colours' id='1' value='trans white'
+PROPERTY control='*i*GridParams' name='colours' id='2' value='none'
+PROPERTY control='*i*GridParams' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridParams' name='layer' id='0' value='+'
+PROPERTY control='*i*GridParams' name='layer' id='1' value='-'
+
+CONTROL type='EditMenus' name='*i*GridMenu' bounds='120.00 2.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridParams' layerMask='1'
+PROPERTY control='*i*GridMenu' name='colours' id='0' value='trans black'
+PROPERTY control='*i*GridMenu' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*GridMenu' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*GridPxLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridMenu' layerMask='ffffffff'
+PROPERTY control='*i*GridPxLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*GridPxLabel' name='colours' id='1' value='white'
+PROPERTY control='*i*GridPxLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridPxLabel' name='labeltext' id='0' value='Grid px'
+PROPERTY control='*i*GridPxLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*i*GridPxLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='EditMenus' name='*i*GridSwitch' bounds='120.00 22.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridParams' layerMask='1'
+PROPERTY control='*i*GridSwitch' name='colours' id='0' value='trans black'
+PROPERTY control='*i*GridSwitch' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*GridSwitch' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*GridShowLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridSwitch' layerMask='ffffffff'
+PROPERTY control='*i*GridShowLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*GridShowLabel' name='colours' id='1' value='white'
+PROPERTY control='*i*GridShowLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridShowLabel' name='labeltext' id='0' value='show Grid'
+PROPERTY control='*i*GridShowLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*i*GridShowLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='LayerSelector' name='*i*GridInfl' bounds='220.00 2.00 21.00 19.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridRider' layerMask='1'
+PROPERTY control='*i*GridInfl' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*GridInfl' name='colours' id='1' value='trans white'
+PROPERTY control='*i*GridInfl' name='colours' id='2' value='trans white'
+PROPERTY control='*i*GridInfl' name='colours' id='3' value='none'
+PROPERTY control='*i*GridInfl' name='colours' id='4' value='none'
+PROPERTY control='*i*GridInfl' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridInfl' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='*i*GridHeader' bounds='0.00 3.00 221.00 17.00' inset='1.00 1.00 1.00 1.00' parent='*i*GridRider' layerMask='1'
+PROPERTY control='*i*GridHeader' name='colours' id='0' value='trans white'
+PROPERTY control='*i*GridHeader' name='colours' id='1' value='black'
+PROPERTY control='*i*GridHeader' name='graphics' id='0' value='none'
+PROPERTY control='*i*GridHeader' name='labeltext' id='0' value=' Grid'
+PROPERTY control='*i*GridHeader' name='labelTextAlignment' id='0' value='0'
+
+
+
+
+CONTROL type='Pane' name='*i*CtrlRider' bounds='6.00 172.00 240.00 60.00' inset='1.00 1.00 1.00 1.00' parent='*i*inspectorRack' layerMask='8'
+PROPERTY control='*i*CtrlRider' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*CtrlRider' name='colours' id='1' value='none'
+PROPERTY control='*i*CtrlRider' name='colours' id='2' value='none'
+PROPERTY control='*i*CtrlRider' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlRider' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*CtrlRider' name='RackMember' id='0' value='YES'
+
+CONTROL type='CollPane' name='*i*CtrlProps' bounds='0.00 20.00 240.00 40.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlRider' layerMask='1'
+PROPERTY control='*i*CtrlProps' name='colours' id='0' value='none'
+PROPERTY control='*i*CtrlProps' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CtrlProps' name='colours' id='2' value='none'
+PROPERTY control='*i*CtrlProps' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlProps' name='layer' id='0' value='+'
+PROPERTY control='*i*CtrlProps' name='layer' id='1' value='-'
+
+CONTROL type='EditMenus' name='*i*CtrlName' bounds='120.00 2.00 118.00 16.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlProps' layerMask='1'
+PROPERTY control='*i*CtrlName' name='colours' id='0' value='trans black'
+PROPERTY control='*i*CtrlName' name='colours' id='1' value='defaultBorder'
+PROPERTY control='*i*CtrlName' name='colours' id='2' value='white'
+
+CONTROL type='Label' name='*i*CtrlNameLabel' bounds='-104.00 3.00 100.00 12.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlName' layerMask='ffffffff'
+PROPERTY control='*i*CtrlNameLabel' name='colours' id='0' value='none'
+PROPERTY control='*i*CtrlNameLabel' name='colours' id='1' value='white'
+PROPERTY control='*i*CtrlNameLabel' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlNameLabel' name='labeltext' id='0' value='Grid px'
+PROPERTY control='*i*CtrlNameLabel' name='labelTextAlignment' id='0' value='2'
+PROPERTY control='*i*CtrlNameLabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='LayerSelector' name='*i*CtrlInfl' bounds='220.00 2.00 21.00 19.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlRider' layerMask='1'
+PROPERTY control='*i*CtrlInfl' name='colours' id='0' value='defaultBackground'
+PROPERTY control='*i*CtrlInfl' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CtrlInfl' name='colours' id='2' value='trans white'
+PROPERTY control='*i*CtrlInfl' name='colours' id='3' value='none'
+PROPERTY control='*i*CtrlInfl' name='colours' id='4' value='none'
+PROPERTY control='*i*CtrlInfl' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlInfl' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='*i*CtrlHeader' bounds='0.00 3.00 221.00 17.00' inset='1.00 1.00 1.00 1.00' parent='*i*CtrlRider' layerMask='1'
+PROPERTY control='*i*CtrlHeader' name='colours' id='0' value='trans white'
+PROPERTY control='*i*CtrlHeader' name='colours' id='1' value='black'
+PROPERTY control='*i*CtrlHeader' name='graphics' id='0' value='none'
+PROPERTY control='*i*CtrlHeader' name='labeltext' id='0' value=' Control'
+PROPERTY control='*i*CtrlHeader' name='labelTextAlignment' id='0' value='0'
+
+/********************************************************
+*                                                       *
+*					Properties                           *
+*                                                       *
+********************************************************/
+
+PROPERTY control='*i*ColInflate' name='clientpane' id='1' value='*i*CtrlColours'
+PROPERTY control='*i*ColInflate' name='skipselected' id='1' value='yes'
+PROPERTY control='*i*GraphInfl' name='clientpane' id='1' value='*i*CtrlGraphics'
+PROPERTY control='*i*GraphInfl' name='skipselected' id='1' value='yes'
+PROPERTY control='*i*ParamInfl' name='clientpane' id='1' value='*i*CtrlParams'
+PROPERTY control='*i*ParamInfl' name='skipselected' id='1' value='yes'
+PROPERTY control='*i*GridInfl' name='clientpane' id='1' value='*i*GridParams'
+PROPERTY control='*i*GridInfl' name='skipselected' id='1' value='yes'
+PROPERTY control='*i*CtrlInfl' name='clientpane' id='1' value='*i*CtrlProps'
+PROPERTY control='*i*CtrlInfl' name='skipselected' id='1' value='yes'
+
+/********************************************************
+*                                                       *
+*					 Graphics                           *
+*                                                       *
+********************************************************/
+
+GRAPHIC name='editColourLabBack' path='0' type='png'
+GR_PROPERTY graphic='editColourLabBack' name='width' id='0' value='274.00'
+GR_PROPERTY graphic='editColourLabBack' name='height' id='0' value='166.00'
+GR_PROPERTY graphic='editColourLabBack' name='scalable' id='0' value='yes' filename='editColourLabBack.png'
+
+GRAPHIC name='editInfoLayerBack' path='0' type='png'
+GR_PROPERTY graphic='editInfoLayerBack' name='width' id='0' value='241.00'
+GR_PROPERTY graphic='editInfoLayerBack' name='height' id='0' value='67.00'
+GR_PROPERTY graphic='editInfoLayerBack' name='scalable' id='0' value='yes' filename='editInfoLayerBack.png'
+
+GRAPHIC name='editShapeLabBack' path='0' type='png'
+GR_PROPERTY graphic='editShapeLabBack' name='width' id='0' value='659.00'
+GR_PROPERTY graphic='editShapeLabBack' name='height' id='0' value='302.00'
+GR_PROPERTY graphic='editShapeLabBack' name='scalable' id='0' value='yes' filename='editShapeLabBack.png'
+
+
+
+
+/********************************************************
+*                                                       *
+*					 Controls                           *
+*                                                       *
+********************************************************/
+
+
+/*
+CONTROL type='Pane' name='editColourLabPane' bounds='30.00 374.00 274.00 166.00' inset='1.00 1.00 1.00 1.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='editColourLabPane' name='colours' id='1' value='black'
+PROPERTY control='editColourLabPane' name='graphics' id='0' value='editColourLabBack'
+PROPERTY control='editColourLabPane' name='layer' id='0' value='Layer 1'
+PROPERTY control='editColourLabPane' name='movable' id='0' value='YES'
+
+CONTROL type='ColourView' name='Colour Lab' bounds='28.00 24.00 103.00 103.00' inset='1.00 1.00 1.00 1.00' parent='editColourLabPane' layerMask='1'
+
+CONTROL type='Label' name='editLabel 0' bounds='0.00 103.00 103.00 17.00' inset='1.00 1.00 1.00 1.00' parent='Colour Lab' layerMask='ffffffff'
+PROPERTY control='editLabel 0' name='colours' id='1' value='black'
+PROPERTY control='editLabel 0' name='labeltext' id='0' value='Colour Lab'
+PROPERTY control='editLabel 0' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 0' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 0' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 0' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 0' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='red component' bounds='136.00 24.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editColourLabPane' layerMask='1'
+PROPERTY control='red component' name='colours' id='1' value='black'
+PROPERTY control='red component' name='colours' id='2' value='trans red'
+PROPERTY control='red component' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 1' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='red component' layerMask='ffffffff'
+PROPERTY control='editLabel 1' name='colours' id='1' value='black'
+PROPERTY control='editLabel 1' name='labeltext' id='0' value='red component'
+PROPERTY control='editLabel 1' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 1' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 1' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 1' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 1' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='green component' bounds='136.00 53.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editColourLabPane' layerMask='1'
+PROPERTY control='green component' name='colours' id='1' value='black'
+PROPERTY control='green component' name='colours' id='2' value='trans green'
+PROPERTY control='green component' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 2' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='green component' layerMask='ffffffff'
+PROPERTY control='editLabel 2' name='colours' id='1' value='black'
+PROPERTY control='editLabel 2' name='labeltext' id='0' value='green component'
+PROPERTY control='editLabel 2' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 2' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 2' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 2' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 2' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='blue component' bounds='136.00 82.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editColourLabPane' layerMask='1'
+PROPERTY control='blue component' name='colours' id='1' value='black'
+PROPERTY control='blue component' name='colours' id='2' value='trans blue'
+PROPERTY control='blue component' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 3' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='blue component' layerMask='ffffffff'
+PROPERTY control='editLabel 3' name='colours' id='1' value='black'
+PROPERTY control='editLabel 3' name='labeltext' id='0' value='blue component'
+PROPERTY control='editLabel 3' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 3' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 3' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 3' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 3' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='alpha component' bounds='136.00 111.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editColourLabPane' layerMask='1'
+PROPERTY control='alpha component' name='colours' id='1' value='black'
+PROPERTY control='alpha component' name='colours' id='2' value='trans black'
+PROPERTY control='alpha component' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 4' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='alpha component' layerMask='ffffffff'
+PROPERTY control='editLabel 4' name='colours' id='1' value='black'
+PROPERTY control='editLabel 4' name='labeltext' id='0' value='alpha component'
+PROPERTY control='editLabel 4' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 4' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 4' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 4' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 4' name='parentLabel' id='0' value='yes'
+*/
+
+
+CONTROL type='Pane' name='editInfoPane' bounds='404.00 394.00 241.00 67.00' inset='1.00 1.00 1.00 1.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='editInfoPane' name='graphics' id='0' value='editInfoLayerBack'
+PROPERTY control='editInfoPane' name='layer' id='0' value='Layer 1'
+PROPERTY control='editInfoPane' name='movable' id='0' value='YES'
+
+CONTROL type='InfoDisplay' name='editInfoDisplay' bounds='14.00 23.00 200.00 24.00' inset='1.00 1.00 1.00 1.00' parent='editInfoPane' layerMask='1'
+PROPERTY control='editInfoDisplay' name='colours' id='0' value='trans white'
+PROPERTY control='editInfoDisplay' name='colours' id='1' value='black'
+
+CONTROL type='Pane' name='editShapeLabPane' bounds='58.00 26.00 659.00 302.00' inset='1.00 1.00 1.00 1.00' parent='editRootControl' layerMask='ffffffff'
+PROPERTY control='editShapeLabPane' name='graphics' id='0' value='editShapeLabBack'
+PROPERTY control='editShapeLabPane' name='layer' id='0' value='Layer 1'
+PROPERTY control='editShapeLabPane' name='movable' id='0' value='YES'
+
+CONTROL type='ShapeEditView' name='editShapeView' bounds='18.00 28.00 608.00 216.00' inset='1.00 1.00 1.00 1.00' parent='editShapeLabPane' layerMask='1'
+PROPERTY control='editShapeView' name='colours' id='0' value='trans black'
+
+CONTROL type='Label' name='editLabel 5' bounds='-1.00 220.00 135.00 20.00' inset='1.00 1.00 1.00 1.00' parent='editShapeView' layerMask='ffffffff'
+PROPERTY control='editLabel 5' name='colours' id='1' value='black'
+PROPERTY control='editLabel 5' name='labeltext' id='0' value='Shape Editor'
+PROPERTY control='editLabel 5' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 5' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 5' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 5' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 5' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='preview value' bounds='303.00 249.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editShapeLabPane' layerMask='1'
+PROPERTY control='preview value' name='colours' id='1' value='black'
+PROPERTY control='preview value' name='colours' id='2' value='trans white'
+PROPERTY control='preview value' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 6' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='preview value' layerMask='ffffffff'
+PROPERTY control='editLabel 6' name='colours' id='1' value='black'
+PROPERTY control='editLabel 6' name='labeltext' id='0' value='preview value'
+PROPERTY control='editLabel 6' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 6' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 6' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 6' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 6' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='shape width' bounds='414.00 249.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editShapeLabPane' layerMask='1'
+PROPERTY control='shape width' name='colours' id='1' value='black'
+PROPERTY control='shape width' name='colours' id='2' value='trans white'
+PROPERTY control='shape width' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 7' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='shape width' layerMask='ffffffff'
+PROPERTY control='editLabel 7' name='colours' id='1' value='black'
+PROPERTY control='editLabel 7' name='labeltext' id='0' value='shape width'
+PROPERTY control='editLabel 7' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 7' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 7' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 7' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 7' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Slider' name='shape height' bounds='524.00 249.00 103.00 16.00' inset='1.00 1.00 1.00 1.00' parent='editShapeLabPane' layerMask='1'
+PROPERTY control='shape height' name='colours' id='1' value='black'
+PROPERTY control='shape height' name='colours' id='2' value='trans white'
+PROPERTY control='shape height' name='direction' id='0' value='horizontal'
+
+CONTROL type='Label' name='editLabel 8' bounds='19.50 16.00 64.00 12.00' inset='1.00 1.00 1.00 1.00' parent='shape height' layerMask='ffffffff'
+PROPERTY control='editLabel 8' name='colours' id='1' value='black'
+PROPERTY control='editLabel 8' name='labeltext' id='0' value='shape height'
+PROPERTY control='editLabel 8' name='labelTextAlignment' id='0' value='1'
+PROPERTY control='editLabel 8' name='labelTextVAlignment' id='0' value='1'
+PROPERTY control='editLabel 8' name='labelTextSize' id='0' value='9.00'
+PROPERTY control='editLabel 8' name='labelTextVOffset' id='0' value='-2.00'
+PROPERTY control='editLabel 8' name='parentLabel' id='0' value='yes'
+
+// Transforms
+
+
+CONTROL type='Pane' name='*i*XFormTools' bounds='18.00 901.00 484.00 104.00' parent='root' layerMask='ffffffff'
+PROPERTY control='*i*XFormTools' name='colours' id='0' value='grey'
+PROPERTY control='*i*XFormTools' name='colours' id='1' value='white'
+PROPERTY control='*i*XFormTools' name='colours' id='2' value='none'
+PROPERTY control='*i*XFormTools' name='graphics' id='0' value='none'
+PROPERTY control='*i*XFormTools' name='layer' id='0' value='Layer 1'
+PROPERTY control='*i*XFormTools' name='movable' id='0' value='YES'
+
+CONTROL type='Pane' name='*i*AlignPane' bounds='3.00 19.00 138.00 82.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='*i*AlignPane' name='colours' id='0' value='trans white'
+PROPERTY control='*i*AlignPane' name='colours' id='1' value='trans white'
+PROPERTY control='*i*AlignPane' name='colours' id='2' value='none'
+PROPERTY control='*i*AlignPane' name='graphics' id='0' value='none'
+PROPERTY control='*i*AlignPane' name='layer' id='0' value='Layer 1'
+
+CONTROL type='Button On-Off' name='T_Align' bounds='49.00 6.00 39.00 18.00' parent='*i*AlignPane' layerMask='1'
+PROPERTY control='T_Align' name='colours' id='0' value='grey'
+PROPERTY control='T_Align' name='colours' id='1' value='black'
+PROPERTY control='T_Align' name='colours' id='2' value='grey'
+PROPERTY control='T_Align' name='colours' id='3' value='none'
+PROPERTY control='T_Align' name='colours' id='4' value='none'
+PROPERTY control='T_Align' name='graphics' id='0' value='none'
+PROPERTY control='T_Align' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='AlignT_Lbl' bounds='6.00 3.00 27.00 12.00' parent='T_Align' layerMask='ffffffff'
+PROPERTY control='AlignT_Lbl' name='colours' id='0' value='none'
+PROPERTY control='AlignT_Lbl' name='colours' id='1' value='green'
+PROPERTY control='AlignT_Lbl' name='graphics' id='0' value='none'
+PROPERTY control='AlignT_Lbl' name='labeltext' id='0' value='top'
+PROPERTY control='AlignT_Lbl' name='parentLabel' id='0' value='yes'
+
+CONTROL type='Button On-Off' name='R_Align' bounds='90.00 30.00 39.00 18.00' parent='*i*AlignPane' layerMask='1'
+PROPERTY control='R_Align' name='colours' id='0' value='grey'
+PROPERTY control='R_Align' name='colours' id='1' value='black'
+PROPERTY control='R_Align' name='colours' id='2' value='grey'
+PROPERTY control='R_Align' name='colours' id='3' value='none'
+PROPERTY control='R_Align' name='colours' id='4' value='none'
+PROPERTY control='R_Align' name='graphics' id='0' value='none'
+PROPERTY control='R_Align' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='AlignR_Lbl' bounds='6.00 3.00 27.00 12.00' parent='R_Align' layerMask='ffffffff'
+PROPERTY control='AlignR_Lbl' name='colours' id='0' value='none'
+PROPERTY control='AlignR_Lbl' name='colours' id='1' value='green'
+PROPERTY control='AlignR_Lbl' name='graphics' id='0' value='none'
+PROPERTY control='AlignR_Lbl' name='labeltext' id='0' value='right'
+
+CONTROL type='Button On-Off' name='L_Align' bounds='7.00 30.00 39.00 18.00' parent='*i*AlignPane' layerMask='1'
+PROPERTY control='L_Align' name='colours' id='0' value='grey'
+PROPERTY control='L_Align' name='colours' id='1' value='black'
+PROPERTY control='L_Align' name='colours' id='2' value='grey'
+PROPERTY control='L_Align' name='colours' id='3' value='none'
+PROPERTY control='L_Align' name='colours' id='4' value='none'
+PROPERTY control='L_Align' name='graphics' id='0' value='none'
+PROPERTY control='L_Align' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='AlignL_Lbl' bounds='6.00 3.00 27.00 12.00' parent='L_Align' layerMask='ffffffff'
+PROPERTY control='AlignL_Lbl' name='colours' id='0' value='none'
+PROPERTY control='AlignL_Lbl' name='colours' id='1' value='green'
+PROPERTY control='AlignL_Lbl' name='graphics' id='0' value='none'
+PROPERTY control='AlignL_Lbl' name='labeltext' id='0' value='left'
+
+CONTROL type='Button On-Off' name='B_Align' bounds='49.00 54.00 39.00 18.00' parent='*i*AlignPane' layerMask='1'
+PROPERTY control='B_Align' name='colours' id='0' value='grey'
+PROPERTY control='B_Align' name='colours' id='1' value='black'
+PROPERTY control='B_Align' name='colours' id='2' value='grey'
+PROPERTY control='B_Align' name='colours' id='3' value='none'
+PROPERTY control='B_Align' name='colours' id='4' value='none'
+PROPERTY control='B_Align' name='graphics' id='0' value='none'
+PROPERTY control='B_Align' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='AlignB_Lbl' bounds='1.00 3.00 37.00 12.00' parent='B_Align' layerMask='ffffffff'
+PROPERTY control='AlignB_Lbl' name='colours' id='0' value='none'
+PROPERTY control='AlignB_Lbl' name='colours' id='1' value='green'
+PROPERTY control='AlignB_Lbl' name='graphics' id='0' value='none'
+PROPERTY control='AlignB_Lbl' name='labeltext' id='0' value='bottom'
+
+CONTROL type='Label' name='AlignSelectedLbl' bounds='3.00 3.00 138.00 15.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='AlignSelectedLbl' name='colours' id='0' value='trans white'
+PROPERTY control='AlignSelectedLbl' name='colours' id='1' value='black'
+PROPERTY control='AlignSelectedLbl' name='graphics' id='0' value='none'
+PROPERTY control='AlignSelectedLbl' name='labeltext' id='0' value='Align Selected'
+
+CONTROL type='Pane' name='*i*CloningPane' bounds='143.00 19.00 138.00 82.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='*i*CloningPane' name='colours' id='0' value='trans white'
+PROPERTY control='*i*CloningPane' name='colours' id='1' value='trans white'
+PROPERTY control='*i*CloningPane' name='colours' id='2' value='none'
+PROPERTY control='*i*CloningPane' name='graphics' id='0' value='none'
+PROPERTY control='*i*CloningPane' name='layer' id='0' value='Layer 1'
+
+CONTROL type='Button On-Off' name='CloneGO' bounds='93.00 54.00 39.00 18.00' parent='*i*CloningPane' layerMask='1'
+PROPERTY control='CloneGO' name='colours' id='0' value='grey'
+PROPERTY control='CloneGO' name='colours' id='1' value='black'
+PROPERTY control='CloneGO' name='colours' id='2' value='grey'
+PROPERTY control='CloneGO' name='colours' id='3' value='none'
+PROPERTY control='CloneGO' name='colours' id='4' value='none'
+PROPERTY control='CloneGO' name='graphics' id='0' value='none'
+PROPERTY control='CloneGO' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='Label 4490' bounds='1.00 3.00 37.00 12.00' parent='CloneGO' layerMask='ffffffff'
+PROPERTY control='Label 4490' name='colours' id='0' value='none'
+PROPERTY control='Label 4490' name='colours' id='1' value='green'
+PROPERTY control='Label 4490' name='graphics' id='0' value='none'
+PROPERTY control='Label 4490' name='labeltext' id='0' value='GO!'
+
+CONTROL type='EditMenus' name='*i*CloneArray' bounds='37.00 54.00 53.00 18.00' parent='*i*CloningPane' layerMask='1'
+PROPERTY control='*i*CloneArray' name='colours' id='0' value='grey'
+PROPERTY control='*i*CloneArray' name='colours' id='1' value='black'
+PROPERTY control='*i*CloneArray' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='cloneArraylabel' bounds='-34.00 3.00 33.00 12.00' parent='*i*CloneArray' layerMask='ffffffff'
+PROPERTY control='cloneArraylabel' name='colours' id='0' value='none'
+PROPERTY control='cloneArraylabel' name='colours' id='1' value='black'
+PROPERTY control='cloneArraylabel' name='graphics' id='0' value='none'
+PROPERTY control='cloneArraylabel' name='labeltext' id='0' value='Array'
+PROPERTY control='cloneArraylabel' name='parentLabel' id='0' value='yes'
+
+CONTROL type='EditMenus' name='*i*CloneMode' bounds='37.00 6.00 95.00 18.00' parent='*i*CloningPane' layerMask='1'
+PROPERTY control='*i*CloneMode' name='colours' id='0' value='grey'
+PROPERTY control='*i*CloneMode' name='colours' id='1' value='black'
+PROPERTY control='*i*CloneMode' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='CloneModeLabel' bounds='-34.00 3.00 33.00 12.00' parent='*i*CloneMode' layerMask='ffffffff'
+PROPERTY control='CloneModeLabel' name='colours' id='0' value='none'
+PROPERTY control='CloneModeLabel' name='colours' id='1' value='black'
+PROPERTY control='CloneModeLabel' name='graphics' id='0' value='none'
+PROPERTY control='CloneModeLabel' name='labeltext' id='0' value='Mode'
+
+CONTROL type='Label' name='CloningLbl' bounds='143.00 3.00 138.00 15.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='CloningLbl' name='colours' id='0' value='trans white'
+PROPERTY control='CloningLbl' name='colours' id='1' value='black'
+PROPERTY control='CloningLbl' name='graphics' id='0' value='none'
+PROPERTY control='CloningLbl' name='labeltext' id='0' value='Cloning'
+
+CONTROL type='Pane' name='*i*TransformPane' bounds='283.00 19.00 198.00 82.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='*i*TransformPane' name='colours' id='0' value='trans white'
+PROPERTY control='*i*TransformPane' name='colours' id='1' value='trans white'
+PROPERTY control='*i*TransformPane' name='colours' id='2' value='none'
+PROPERTY control='*i*TransformPane' name='graphics' id='0' value='none'
+PROPERTY control='*i*TransformPane' name='layer' id='0' value='Layer 1'
+
+CONTROL type='Button On-Off' name='TransformGO' bounds='153.00 54.00 39.00 18.00' parent='*i*TransformPane' layerMask='1'
+PROPERTY control='TransformGO' name='colours' id='0' value='grey'
+PROPERTY control='TransformGO' name='colours' id='1' value='black'
+PROPERTY control='TransformGO' name='colours' id='2' value='grey'
+PROPERTY control='TransformGO' name='colours' id='3' value='none'
+PROPERTY control='TransformGO' name='colours' id='4' value='none'
+PROPERTY control='TransformGO' name='graphics' id='0' value='none'
+PROPERTY control='TransformGO' name='graphics' id='1' value='none'
+
+CONTROL type='Label' name='XFormGoLabel' bounds='1.00 3.00 37.00 12.00' parent='TransformGO' layerMask='ffffffff'
+PROPERTY control='XFormGoLabel' name='colours' id='0' value='none'
+PROPERTY control='XFormGoLabel' name='colours' id='1' value='green'
+PROPERTY control='XFormGoLabel' name='graphics' id='0' value='none'
+PROPERTY control='XFormGoLabel' name='labeltext' id='0' value='GO!'
+
+CONTROL type='EditMenus' name='*i*TF_y' bounds='51.00 6.00 53.00 18.00' parent='*i*TransformPane' layerMask='1'
+PROPERTY control='*i*TF_y' name='colours' id='0' value='grey'
+PROPERTY control='*i*TF_y' name='colours' id='1' value='black'
+PROPERTY control='*i*TF_y' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='plusY' bounds='-19.00 3.00 18.00 12.00' parent='*i*TF_y' layerMask='ffffffff'
+PROPERTY control='plusY' name='colours' id='0' value='none'
+PROPERTY control='plusY' name='colours' id='1' value='black'
+PROPERTY control='plusY' name='graphics' id='0' value='none'
+PROPERTY control='plusY' name='labeltext' id='0' value='+y'
+
+CONTROL type='EditMenus' name='*i*TF_x' bounds='21.00 30.00 53.00 18.00' parent='*i*TransformPane' layerMask='1'
+PROPERTY control='*i*TF_x' name='colours' id='0' value='grey'
+PROPERTY control='*i*TF_x' name='colours' id='1' value='black'
+PROPERTY control='*i*TF_x' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='plusX' bounds='-19.00 3.00 18.00 12.00' parent='*i*TF_x' layerMask='ffffffff'
+PROPERTY control='plusX' name='colours' id='0' value='none'
+PROPERTY control='plusX' name='colours' id='1' value='black'
+PROPERTY control='plusX' name='graphics' id='0' value='none'
+PROPERTY control='plusX' name='labeltext' id='0' value='+x'
+
+CONTROL type='EditMenus' name='*i*TF_w' bounds='80.00 30.00 53.00 18.00' parent='*i*TransformPane' layerMask='1'
+PROPERTY control='*i*TF_w' name='colours' id='0' value='grey'
+PROPERTY control='*i*TF_w' name='colours' id='1' value='black'
+PROPERTY control='*i*TF_w' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='plusW' bounds='53.00 3.00 22.00 12.00' parent='*i*TF_w' layerMask='ffffffff'
+PROPERTY control='plusW' name='colours' id='0' value='none'
+PROPERTY control='plusW' name='colours' id='1' value='black'
+PROPERTY control='plusW' name='graphics' id='0' value='none'
+PROPERTY control='plusW' name='labeltext' id='0' value='w%'
+
+CONTROL type='EditMenus' name='*i*TF_h' bounds='51.00 54.00 53.00 18.00' parent='*i*TransformPane' layerMask='1'
+PROPERTY control='*i*TF_h' name='colours' id='0' value='grey'
+PROPERTY control='*i*TF_h' name='colours' id='1' value='black'
+PROPERTY control='*i*TF_h' name='colours' id='2' value='green'
+
+CONTROL type='Label' name='plusH' bounds='53.00 3.00 22.00 12.00' parent='*i*TF_h' layerMask='ffffffff'
+PROPERTY control='plusH' name='colours' id='0' value='none'
+PROPERTY control='plusH' name='colours' id='1' value='black'
+PROPERTY control='plusH' name='graphics' id='0' value='none'
+PROPERTY control='plusH' name='labeltext' id='0' value='h%'
+
+CONTROL type='Label' name='TransformLbl' bounds='283.00 3.00 198.00 15.00' parent='*i*XFormTools' layerMask='1'
+PROPERTY control='TransformLbl' name='colours' id='0' value='trans white'
+PROPERTY control='TransformLbl' name='colours' id='1' value='black'
+PROPERTY control='TransformLbl' name='graphics' id='0' value='none'
+PROPERTY control='TransformLbl' name='labeltext' id='0' value='Transform'
+
+/********************************************************
+*                                                       *
+*					Properties                           *
+*                                                       *
+********************************************************/
+LISTENER control='Colour Lab' port='Red' listento='red component' extport='Slider Value'
+LISTENER control='Colour Lab' port='Green' listento='green component' extport='Slider Value'
+LISTENER control='Colour Lab' port='Blue' listento='blue component' extport='Slider Value'
+LISTENER control='Colour Lab' port='Alpha' listento='alpha component' extport='Slider Value'
+PROPERTY control='green component' name='prototype' id='0' value='red component'
+PROPERTY control='editLabel 2' name='prototype' id='0' value='editLabel 1'
+PROPERTY control='blue component' name='prototype' id='0' value='green component'
+PROPERTY control='editLabel 3' name='prototype' id='0' value='editLabel 2'
+PROPERTY control='alpha component' name='prototype' id='0' value='blue component'
+PROPERTY control='editLabel 4' name='prototype' id='0' value='editLabel 3'
+LISTENER control='editShapeView' port='Value' listento='preview value' extport='Slider Value'
+LISTENER control='editShapeView' port='Preview Width' listento='shape width' extport='Slider Value'
+LISTENER control='editShapeView' port='Preview Height' listento='shape height' extport='Slider Value'
+PROPERTY control='shape width' name='prototype' id='0' value='preview value'
+PROPERTY control='editLabel 7' name='prototype' id='0' value='editLabel 6'
+PROPERTY control='shape height' name='prototype' id='0' value='shape width'
+PROPERTY control='editLabel 8' name='prototype' id='0' value='editLabel 7'
+
+PROPERTY control='T_Align' name='ActionID' id='1' value='616C6E74'
+PROPERTY control='R_Align' name='ActionID' id='1' value='616C6E72'
+PROPERTY control='L_Align' name='ActionID' id='1' value='616C6E6C'
+PROPERTY control='B_Align' name='ActionID' id='1' value='616C6E62'
+PROPERTY control='CloneGO' name='ActionID' id='1' value='78617272'
+PROPERTY control='TransformGO' name='ActionID' id='1' value='7866726D'
