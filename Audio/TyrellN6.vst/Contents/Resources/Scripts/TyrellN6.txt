@@ -1,0 +1,3 @@
+ALTERNATIVE name='blue' filename='TyrellN6_blue.txt'
+ALTERNATIVE name='gelb' filename='TyrellN6_gelb.txt'
+INCLUDE filename='default'
