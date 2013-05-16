@@ -457,7 +457,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -550,7 +549,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 810.25, 629.205017, 98.0, 18.0 ],
-									"text" : "move 0 0 0 0.3"
+									"text" : "move 0 0 -0.9 0"
 								}
 
 							}
@@ -668,7 +667,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 842.25, 493.705017, 61.0, 18.0 ],
-									"text" : "0 0 -0.1 0"
+									"text" : "0 0 -0.9 0"
 								}
 
 							}
@@ -752,7 +751,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 842.25, 413.0, 57.0, 18.0 ],
-									"text" : "0 0 0.1 0"
+									"text" : "0 0 0.9 0"
 								}
 
 							}
@@ -1234,14 +1233,14 @@
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 12.0,
 						"description" : "",
+						"fontname" : "Arial",
+						"tags" : "",
 						"globalpatchername" : "",
+						"default_fontface" : 0,
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"tags" : "",
-						"default_fontface" : 0,
 						"digest" : "",
-						"default_fontname" : "Arial",
-						"fontname" : "Arial"
+						"default_fontname" : "Arial"
 					}
 ,
 					"text" : "p keyboard_control"
@@ -1407,6 +1406,62 @@
 						"tags" : "",
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-86",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 984.0, 527.0, 60.0, 20.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-84",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1043.0, 569.0, 32.5, 18.0 ],
+									"text" : "3."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-78",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 963.0, 569.0, 34.0, 18.0 ],
+									"text" : "0.25"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-73",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1001.5, 569.0, 32.5, 18.0 ],
+									"text" : "1."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -2552,14 +2607,14 @@
 									"saved_object_attributes" : 									{
 										"default_fontsize" : 12.0,
 										"description" : "",
+										"fontname" : "Arial",
+										"tags" : "",
 										"globalpatchername" : "",
+										"default_fontface" : 0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"tags" : "",
-										"default_fontface" : 0,
 										"digest" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial"
+										"default_fontname" : "Arial"
 									}
 ,
 									"text" : "p lissajous"
@@ -4147,14 +4202,14 @@
 																	"saved_object_attributes" : 																	{
 																		"default_fontsize" : 12.0,
 																		"description" : "",
+																		"fontname" : "Arial",
+																		"tags" : "",
 																		"globalpatchername" : "",
+																		"default_fontface" : 0,
 																		"fontface" : 0,
 																		"fontsize" : 12.0,
-																		"tags" : "",
-																		"default_fontface" : 0,
 																		"digest" : "",
-																		"default_fontname" : "Arial",
-																		"fontname" : "Arial"
+																		"default_fontname" : "Arial"
 																	}
 ,
 																	"text" : "p vrpn_recv"
@@ -4912,14 +4967,14 @@
 													"saved_object_attributes" : 													{
 														"default_fontsize" : 12.0,
 														"description" : "",
+														"fontname" : "Arial",
+														"tags" : "",
 														"globalpatchername" : "",
+														"default_fontface" : 0,
 														"fontface" : 0,
 														"fontsize" : 12.0,
-														"tags" : "",
-														"default_fontface" : 0,
 														"digest" : "",
-														"default_fontname" : "Arial",
-														"fontname" : "Arial"
+														"default_fontname" : "Arial"
 													}
 ,
 													"text" : "p vrpn_right_hand_2"
@@ -5059,7 +5114,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 156.75, 54.804321, 234.0, 18.0 ],
-													"text" : "0.07584 -0.994844 -0.497607"
+													"text" : "0. 0. 0."
 												}
 
 											}
@@ -5265,45 +5320,17 @@
 									"saved_object_attributes" : 									{
 										"default_fontsize" : 12.0,
 										"description" : "",
+										"fontname" : "Arial",
+										"tags" : "",
 										"globalpatchername" : "",
+										"default_fontface" : 0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"tags" : "",
-										"default_fontface" : 0,
 										"digest" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial"
+										"default_fontname" : "Arial"
 									}
 ,
 									"text" : "p followGlove"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-101",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 379.0, 587.0, 32.5, 18.0 ],
-									"text" : "0.5"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-97",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 348.0, 613.0, 94.0, 18.0 ],
-									"text" : "setMaxEuler $1"
 								}
 
 							}
@@ -7422,14 +7449,14 @@
 													"saved_object_attributes" : 													{
 														"default_fontsize" : 12.0,
 														"description" : "",
+														"fontname" : "Arial",
+														"tags" : "",
 														"globalpatchername" : "",
+														"default_fontface" : 0,
 														"fontface" : 0,
 														"fontsize" : 12.0,
-														"tags" : "",
-														"default_fontface" : 0,
 														"digest" : "",
-														"default_fontname" : "Arial",
-														"fontname" : "Arial"
+														"default_fontname" : "Arial"
 													}
 ,
 													"text" : "p vrpn_recv"
@@ -8287,14 +8314,14 @@
 									"saved_object_attributes" : 									{
 										"default_fontsize" : 12.0,
 										"description" : "",
+										"fontname" : "Arial",
+										"tags" : "",
 										"globalpatchername" : "",
+										"default_fontface" : 0,
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"tags" : "",
-										"default_fontface" : 0,
 										"digest" : "",
-										"default_fontname" : "Arial",
-										"fontname" : "Arial"
+										"default_fontname" : "Arial"
 									}
 ,
 									"text" : "p vrpn_transtrack"
@@ -8317,13 +8344,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-2",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 95.25, 742.614563, 88.0, 73.0 ],
-									"text" : "step -0.462285 -0.97207 -0.571537 0.161631"
+									"patching_rect" : [ 95.25, 742.614563, 88.0, 60.0 ],
+									"text" : "step 0.145163 -0.954493 0.354062 -4.459581"
 								}
 
 							}
@@ -8908,15 +8935,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-97", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-101", 0 ]
 								}
 
 							}
@@ -9526,6 +9544,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-73", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-47", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -9580,6 +9607,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-65", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-78", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-80", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -9607,10 +9643,46 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-84", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-81", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-85", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-73", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-86", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-78", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-86", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-84", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-86", 0 ]
 								}
 
 							}
@@ -9632,15 +9704,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-75", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-97", 0 ]
-								}
-
-							}
  ],
 						"dependency_cache" : [ 							{
 								"name" : "vrpn.tracker.mxo",
@@ -9653,14 +9716,14 @@
 					"saved_object_attributes" : 					{
 						"default_fontsize" : 12.0,
 						"description" : "",
+						"fontname" : "Arial",
+						"tags" : "",
 						"globalpatchername" : "",
+						"default_fontface" : 0,
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"tags" : "",
-						"default_fontface" : 0,
 						"digest" : "",
-						"default_fontname" : "Arial",
-						"fontname" : "Arial"
+						"default_fontname" : "Arial"
 					}
 ,
 					"text" : "p drone_transtrack"
